@@ -21,24 +21,26 @@ Here's the most important bit of this blog post. I think that if you want to
 make awesome software (which is reliable, and which does something that's
 useful to someone), you need to do three things:
 
-1.    Figure out what you want
-1.    Write code that does what you said you wanted
-1.    Manage (1) and (2) within the constraints of your local economics<sup>1</sup>.
+1.    *Specification*: Figure out what you want
+1.    *Implementation*: Write code that does what you said you wanted
+1.    *Cost*: Manage "Specification" and _Implementation_ within the constraints of your local economics<sup>1</sup>.
 
 
-Academic computer scientists - quite rightly - tend to focus on (2). There are
-good reasons for this - success in (2) is relatively easy to measure, even if
-you're developing a small prototype in isolation from the market it's
-ultimately aimed at. On the other hand, I think Agile/TDD (Test Driven
-Development) is really good at (1). When I was living in academia I often found
-myself arguing that formal methods and proof-based techniques were better at
-(2) than TDD can ever be<sup>2</sup>.  This might be true<sup>3</sup>, but it
-misses the point. The point is that it doesn't matter how good an engineer is
-at (2) if they have no plan for (1). For the rest of this post, I'm going to
-explore the strategy we use at Pivotal for (1) and what that might mean for
-academic toolsmiths who want us to use their methods and tools when we come to
-do (2).  Many of the things I mention here will also turn out to be quite handy
-for (3) as well, but to do that justice will require another post.
+Academic computer scientists - quite rightly - tend to focus on
+_Implementation_. There are good reasons for this - success in "Implementation"
+is relatively easy to measure, even if you're developing a small prototype in
+isolation from the market it's ultimately aimed at. On the other hand, I think
+Agile/TDD (Test Driven Development) is really good at "Specification". When I
+was living in academia I often found myself arguing that formal methods and
+proof-based techniques were better at _Implementation_ than TDD can ever
+be<sup>2</sup>.  This might be true<sup>3</sup>, but it misses the point. The
+point is that it doesn't matter how good an engineer is at _Implementation_ if
+they have no plan for "Specification". For the rest of this post, I'm going to
+explore the strategy we use at Pivotal for "Specification" and what that might
+mean for academic toolsmiths who want us to use their methods and tools when we
+come to do _Implementation_.  Many of the things I mention here will also turn
+out to be quite handy for "Cost" as well, but to do that justice will require
+another post.
 
 ## Agile/TDD at Pivotal
 
@@ -307,7 +309,7 @@ barely scratches the surface of what might be possible.
 
 Recall the list of three things I claimed you need to build awesome software
 (right at the top of this page). Wouldn't it be great if engineers working on
-(1) and academics working on (2) had independently stumbled on the same idea of
+"Specification" and academics working on _Implementation_ had independently stumbled on the same idea of
 "locality"? If so, then that commonality might be interesting in its own right;
 but perhaps it could also be exploited by academic toolsmiths to produce some
 awesome new tools that fit well into our processes here in industry.
@@ -332,7 +334,7 @@ life of your citizens without making any money ; or you might be working on an
 open source project fueled by volunteer time, looking to improve your
 reputational value by doing something people think is cool.
 
-<sup>2</sup>   Or at least at verifying that you did (2) right when you wrote
+<sup>2</sup>   Or at least at verifying that you did _Implementation_ right when you wrote
 the code. [Some formal
 methods](https://en.wikipedia.org/wiki/Refinement_(computing)#Program_refinement)
 will tell you how to write the code such that it does the right thing, while
